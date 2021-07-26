@@ -14,10 +14,6 @@ formulario.addEventListener("submit", function (event) {
         var mensaje = document.getElementById("mensaje-exito");
         formulario.style.display = "none";
         mensaje.style.display = "flex";
-        var msg = document.createElement("p");
-        msg.innerHTML = "Hemos  recibido  sus  datos,  pronto  nos estaremos comunicando con usted.";
-        mensaje.appendChild(msg);
-        msg.className = "exito";
     }
     event.preventDefault();
 });

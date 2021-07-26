@@ -15,11 +15,6 @@ formulario.addEventListener("submit", (event:any) => {
         let mensaje:any = document.getElementById("mensaje-exito")
         formulario.style.display = "none";
         mensaje.style.display = "flex";
-
-        let msg = document.createElement("p")
-        msg.innerHTML = "Hemos  recibido  sus  datos,  pronto  nos estaremos comunicando con usted."
-        mensaje.appendChild(msg)
-        msg.className = "exito"
     }
     event.preventDefault();
 });
