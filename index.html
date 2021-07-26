@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="contenedor-formulario">
+        <form id="formulario" method="POST" action="#">
+            <div id="titulo">
+                <h1>Formulario</h1>
+            </div>
+            <ul>
+                <li>
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" placeholder="Nombre" required>
+                </li>
+                <li>
+                    <label for="apellidos">Apellidos:</label>
+                    <input id="apellidos" type="text" placeholder="Apellidos" required>
+                </li>
+                <li>    
+                    <label for="rut">RUT:</label>
+                    <input id="rut" type="text" placeholder="RUT" required>
+                    <span id="errorRut" style="display: none;">Ingresa un rut valido.</span>
+                </li>
+                <li>
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="E-mail" required>
+                </li>
+                <li>
+                    <label for="telefono">Telefono:</label>
+                    <input id="telefono" type="number" placeholder="Telefono" maxlength="9" required>
+                    <span id="errorTelefono" style="display: none;">Ingresa un numero de telefono valido.</span>
+                </li>
+                <li class="contenedorCheckBox">
+                    <label for="language" id="checkbox">Selecciona un lenguaje de programación de su interés:</label>
+                    <input type="checkbox" id="cbox1" value="python" name="language">
+                    <label for="cbox1">python</label>
+                    <input type="checkbox" id="cbox2" value="java" name="language">
+                    <label for="cbox2">Java</label>
+                    <input type="checkbox" id="cbox3" value="typescript" name="language">
+                    <label for="cbox3">TypeScript</label>
+                    <input type="checkbox" id="cbox4" value="php" name="language">
+                    <label for="cbox4">PHP</label>
+                    <input type="checkbox" id="cbox5" value="c-sharp" name="language">
+                    <label for="cbox5">C#</label>
+                    <input type="checkbox" id="cbox6" value="cpp" name="language">
+                    <label for="cbox6">C++</label> 
+                </li>
+                <li>
+                    <label for="experiencia">Experiencia</label>
+                    <input id="experiencia" type="range" value="0">
+                </li>
+                <li>
+                    <label for="experienciaA" id="experienciaA">Cuantos años de experiencia tiene?</label>
+                    <input type="radio" value="1" id="exp1" name="experienciaA">
+                    <label for="exp1">1</label>
+                    <input type="radio" value="2" id="exp2" name="experienciaA">
+                    <label for="exp2">2</label>
+                    <input type="radio" value="3" id="exp3" name="experienciaA">
+                    <label for="exp3">3</label>
+                    <input type="radio" value="4" id="exp4" name="experienciaA">
+                    <label for="exp4">4</label>
+                    <input type="radio" value="5" id="exp5" name="experienciaA">
+                    <label for="exp5">5</label>
+                </li>
+                <li>
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" maxlength="300" required></textarea>
+                </li>
+                <li>
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="reset" id="limpiar">Limpiar</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div id="mensaje-exito"></div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
